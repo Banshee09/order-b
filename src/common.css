@@ -1,0 +1,135 @@
+/* Responsive related */
+body {
+  font-size: 16px; }
+
+#main {
+  padding-left: 16px;
+  padding-right: 16px; }
+
+.navbar-brand {
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 22px; }
+
+h1 {
+  font-size: 22px; }
+
+.btn-std {
+  font-size: 15px;
+  width: 64px;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.product-col {
+  padding: 2px; }
+
+@media (min-width: 768px) {
+  body {
+    font-size: 17px; }
+  #main {
+    padding-left: 34px;
+    padding-right: 34px; }
+  .navbar-brand {
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 23px; }
+  h1 {
+    font-size: 23px; }
+  .btn-std {
+    font-size: 16px;
+    width: 68px; }
+  .product-col {
+    padding: 4px; } }
+
+@media (min-width: 992px) {
+  body {
+    font-size: 18px; }
+  #main {
+    padding-left: 54px;
+    padding-right: 54px; }
+  .navbar-brand {
+    padding-left: 54px;
+    padding-right: 54px;
+    font-size: 24px; }
+  h1 {
+    font-size: 24px; }
+  .btn-std {
+    font-size: 17px;
+    width: 72px; }
+  .product-col {
+    padding: 6px; } }
+
+/* Responsive not related */
+.table > tbody > tr > td {
+  vertical-align: middle; }
+
+.modal {
+  padding-top: 200px; }
+
+.spinner {
+  background-color: transparent;
+  margin: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #39d819;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite; }
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.resume-heading {
+  width: 100%;
+  text-align: left;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 20px; }
+
+.thumbnail {
+  margin-bottom: 0px;
+  box-shadow: 2px 2px lightgray; }
+  .thumbnail .small-img {
+    width: 100%;
+    padding-top: 56.25%; }
+  .thumbnail .price {
+    color: red;
+    text-align: right;
+    font-weight: bold; }
+  .thumbnail .price:before {
+    content: '$'; }
+
+.panel {
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none; }
+  .panel .panel-heading {
+    border: none;
+    background-color: transparent;
+    padding: 0px; }
+    .panel .panel-heading a:after {
+      /* symbol for "opening" panels */
+      font-family: 'Glyphicons Halflings';
+      /* essential for enabling glyphicon */
+      content: "\e113";
+      /* adjust as needed, taken from bootstrap.css */
+      float: left;
+      /* adjust as needed */
+      color: grey;
+      /* adjust as needed */ }
+    .panel .panel-heading a.collapsed:after {
+      /* symbol for "collapsed" panels */
+      content: "\e114";
+      /* adjust as needed, taken from bootstrap.css */ }
